@@ -1,14 +1,37 @@
 <template>
 <div>
     <b-navbar toggleable="lg" type="dark" variant="info" class="app-sidenav">
-        <b-navbar-brand href="#">NavBar</b-navbar-brand>
+        <b-navbar-brand href="#">
+          <span class="d-block d-lg-none">Captain America</span>
+          <span class="d-none d-lg-block">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/36/Captain_America_Shield.png/revision/latest?cb=20190316204818" alt="">
+            <!-- <img class="img-fluid img-profile rounded-circle mx-auto mb-2" :src="require('@/assets/images/Anil-Photo.jpeg')" /> -->
+          </span>
+        </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
-            <b-navbar-nav>
-                <b-nav-item href="#" class="active">Link 1</b-nav-item>
-                <b-nav-item href="#">Link 2</b-nav-item>
-                <b-nav-item href="#">Link 2</b-nav-item>
-            </b-navbar-nav>
+            <!-- <b-navbar-nav>
+                <b-nav-item href="#" class="active">About</b-nav-item>
+                <b-nav-item href="#">Summary</b-nav-item>
+                <b-nav-item href="#">Experience</b-nav-item>
+                <b-nav-item href="#">Skills</b-nav-item>
+                <b-nav-item href="#">Projects</b-nav-item>
+            </b-navbar-nav>-->
+            <scrollactive :offset="80" :duration="800" active-class="active" bezier-easing-value=".5,0,.35,1" class="navbar-nav" tag="ul" v-on:itemchanged="onItemChanged">
+              <!-- <a href="#home" class="scrollactive-item">Home</a>
+              <a href="#about-us" class="scrollactive-item">About Us</a>
+              <a href="#portfolio" class="scrollactive-item">Portfolio</a>
+              <a href="#contact" class="scrollactive-item">Contact</a> -->
+              <li class="nav-item active">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#summary" class="nav-link">one</a>
+              </li>
+              <li class="nav-item">
+                <a href="#experience" class="nav-link">two</a>
+              </li>
+            </scrollactive>
         </b-collapse>
     </b-navbar>
 </div>
@@ -23,6 +46,8 @@ export default {
 <style lang="scss" scoped>
 
 .app-sidenav {
+  background-color: $orange !important;
+
   .navbar-nav .nav-item .nav-link {
     font-weight: 800;
     letter-spacing: 0.05rem;
