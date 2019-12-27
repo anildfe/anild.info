@@ -10,26 +10,24 @@
         </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
-            <!-- <b-navbar-nav>
-                <b-nav-item href="#" class="active">About</b-nav-item>
-                <b-nav-item href="#">Summary</b-nav-item>
-                <b-nav-item href="#">Experience</b-nav-item>
-                <b-nav-item href="#">Skills</b-nav-item>
-                <b-nav-item href="#">Projects</b-nav-item>
-            </b-navbar-nav>-->
-            <scrollactive :offset="80" :duration="800" active-class="active" bezier-easing-value=".5,0,.35,1" class="navbar-nav" tag="ul" v-on:itemchanged="onItemChanged">
-              <!-- <a href="#home" class="scrollactive-item">Home</a>
-              <a href="#about-us" class="scrollactive-item">About Us</a>
-              <a href="#portfolio" class="scrollactive-item">Portfolio</a>
-              <a href="#contact" class="scrollactive-item">Contact</a> -->
-              <li class="nav-item active">
-                <a href="#about" class="nav-link">About</a>
+            <scrollactive :offset="10" :duration="800" active-class="active" bezier-easing-value=".5,0,.35,1" class="navbar-nav" tag="ul" :modifyUrl="false">
+              <!-- <li class="nav-item">
+                <a href="#home" class="nav-link scrollactive-item">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a href="#about" class="nav-link scrollactive-item">About</a>
               </li>
               <li class="nav-item">
-                <a href="#summary" class="nav-link">one</a>
+                <a href="#summary" class="nav-link scrollactive-item">Summary</a>
               </li>
               <li class="nav-item">
-                <a href="#experience" class="nav-link">two</a>
+                <a href="#experience" class="nav-link scrollactive-item">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link scrollactive-item">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link scrollactive-item">Projects</a>
               </li>
             </scrollactive>
         </b-collapse>
@@ -46,7 +44,8 @@ export default {
 <style lang="scss" scoped>
 
 .app-sidenav {
-  background-color: $orange !important;
+  background-color: $primary !important;
+  box-shadow: 1px 0px 5px rgb(146, 146, 146);
 
   .navbar-nav .nav-item .nav-link {
     font-weight: 800;
