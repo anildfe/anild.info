@@ -1,8 +1,16 @@
-// Mixins
 
-@mixin body-font {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    -ms-transition: 	$transition;
+    transition:         $transition;
 }
-@mixin heading-font {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform:    $transform;
+    -ms-transform:     $transform;
+    -o-transform:      $transform;
+    transform:         $transform;
 }
