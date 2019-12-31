@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
 
 body {
     font-family: $font-primary;
@@ -6,5 +6,15 @@ body {
     font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
-    color: lighten($black, 60%);
+    color: lighten($black, 40%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	line-height: 1.5;
+	color: rgba(0,0,0,1);
+	font-weight: 400;
 }

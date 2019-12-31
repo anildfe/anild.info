@@ -113,7 +113,8 @@ export default {
         @include media-breakpoint-up(md) {
             margin-top: -82px;
             background: $white!important;
-		    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+            position: fixed;
         }
 
         &.awake {
