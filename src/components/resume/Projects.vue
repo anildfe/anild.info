@@ -1,7 +1,7 @@
 <template>
-    <div class="resume-section_item projects-section">
+    <section class="resume-section_sub-section projects-section">
         <h2>Projects</h2>
-    </div>
+    </section>
 </template>
 
 <script>

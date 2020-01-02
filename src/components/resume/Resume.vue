@@ -36,6 +36,8 @@ export default {
 <style lang="scss">
 .resume-section {
     &_sub-section {
+        margin-bottom: 70px;
+
         h2 {
             font-weight: 800;
             color: $primary;
@@ -44,6 +46,10 @@ export default {
         }
 
         &_item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
             .item-icon {
                 width: 60px;
                 height: 60px;
@@ -53,6 +59,22 @@ export default {
                 i {
                     font-size: 22px;
                     color: $white;
+                }
+            }
+
+            .item-text {
+                .date {
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                .title {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                .place {
+                    font-size: 18px;
+                    font-weight: 700;
                 }
             }
         }

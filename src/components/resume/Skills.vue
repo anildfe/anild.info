@@ -1,7 +1,7 @@
 <template>
-    <div class="resume-section_item skills-section">
+    <section class="resume-section_sub-section skills-section">
         <h2>Skills</h2>
-    </div>
+    </section>
 </template>
 
 <script>
