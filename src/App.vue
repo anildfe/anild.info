@@ -4,6 +4,8 @@
     <app-home></app-home>
     <app-about></app-about>
     <app-resume></app-resume>
+    <!-- <app-blog></app-blog> -->
+    <app-contact></app-contact>
 </div>
 </template>
 
@@ -12,12 +14,16 @@ import Nav from './components/Nav.vue';
 import Home from './components/Home.vue';
 import About from './components/About.vue';
 import Resume from './components/resume/Resume.vue';
+import Blog from './components/Blog.vue';
+import Contact from './components/Contact.vue';
 export default {
     components: {
         appNav: Nav,
         appHome: Home,
         appAbout: About,
-        appResume: Resume
+        appResume: Resume,
+        appBlog: Blog,
+        appContact: Contact
     }
 }
 </script>

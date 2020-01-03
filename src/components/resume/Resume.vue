@@ -1,6 +1,7 @@
 <template>
     <section class="resume-section">
         <div class="container">
+            <h2 class="mb-4 text-center heading">Resume</h2>
             <div class="row">
                 <div class="col-md-3">
                     <app-sidenav></app-sidenav>
@@ -49,6 +50,10 @@ export default {
             margin-bottom: 30px;
             padding-bottom: 30px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            &:last-child {
+                border-bottom: none;
+            }
 
             .item-icon {
                 width: 60px;
