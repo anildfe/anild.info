@@ -1,12 +1,10 @@
 <template>
-     <b-card
-        header="featured"
-        header-tag="header"
-        title="Title"
-        >
-        <b-card-text>Header and footers using props.</b-card-text>
-        <b-button href="#" variant="primary">Go somewhere</b-button>
-    </b-card>
+    <div class="card" v-b-modal.modal-1>
+        <img src="@/assets/images/photo-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav class="d-none d-sm-block">
         <ul class="p-0">
             <li class="mb-3"><a href="">Education</a></li>
             <li class="mb-3"><a href="">Experience</a></li>

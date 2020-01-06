@@ -45,44 +45,6 @@ export default {
             margin-bottom: 30px;
             font-size: 30px;
         }
-
-        &_item {
-            margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-            &:last-child {
-                border-bottom: none;
-            }
-
-            .item-icon {
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                background: $primary;
-
-                i {
-                    font-size: 22px;
-                    color: $white;
-                }
-            }
-
-            .item-text {
-                .date {
-                    color: $primary;
-                    font-size: 16px;
-                    font-weight: 700;
-                }
-                .title {
-                    font-size: 24px;
-                    font-weight: 700;
-                }
-                .place {
-                    font-size: 18px;
-                    font-weight: 700;
-                }
-            }
-        }
     }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="progress-wrap">
         <h3>HTML <span>90%</span></h3>
-        <b-progress height="12px" :value="90" variant="info"></b-progress>
+        <b-progress height="10px" :value="90" variant="info"></b-progress>
     </div>
 </template>
 

@@ -39,15 +39,15 @@ export default {
         ul {
             list-style: none;
             a {
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
                 background: $black;
                 border-radius: 50%;
                 text-decoration: none;
                 transition: all .3s ease;
 
                 i {
-                    font-size: 28px;
+                    font-size: 22px;
                     color: $white;
                 }
 

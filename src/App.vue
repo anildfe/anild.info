@@ -5,7 +5,7 @@
     <app-about></app-about>
     <app-resume></app-resume>
     <!-- <app-blog></app-blog> -->
-    <app-contact></app-contact>
+    <!-- <app-contact></app-contact> -->
 </div>
 </template>
 
