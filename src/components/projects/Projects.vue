@@ -1,6 +1,6 @@
 <template>
-    <section class="resume-section_sub-section projects-section">
-        <h2>Projects</h2>
+    <section class="projects-section">
+        <h2 class="mb-4 text-center heading">Projects</h2>
         <div class="row">
            <div class="col-md-4 mb-4">
                <app-project></app-project>
@@ -29,6 +29,7 @@
 
 <script>
 import Project from './Project.vue';
+
 export default {
     components: {
         appProject: Project

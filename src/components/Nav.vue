@@ -11,6 +11,7 @@
                         <b-nav-item href="#"><span>Home</span></b-nav-item>
                         <b-nav-item href="#"><span>About</span></b-nav-item>
                         <b-nav-item href="#"><span>Resume</span></b-nav-item>
+                        <b-nav-item href="#"><span>Projects</span></b-nav-item>
                         <b-nav-item href="#"><span>Blog</span></b-nav-item>
                         <b-nav-item href="#"><span>Contact</span></b-nav-item>
                     </b-navbar-nav>
@@ -36,13 +37,13 @@ export default {
     z-index: 3;
 
     @include media-breakpoint-down(md) {
-        background: $black !important;
-        position: relative;
+        background: $surface !important;
+        position: fixed;
 		top: 0;
 		padding-top: 0;
 		padding-bottom: 0;
 		padding-left: 15px;
-		padding-right: 15px;
+        padding-right: 15px;
     }
 
     .navbar-brand {
@@ -58,7 +59,7 @@ export default {
         > .nav-link {
             font-size: 16px;
             padding: 7px 20px;
-            color: $black;
+            color: $white;
             font-weight: 400;
             opacity: 1 !important;
 
@@ -112,8 +113,8 @@ export default {
     &.scrolled {
         @include media-breakpoint-up(md) {
             margin-top: -82px;
-            background: $white!important;
-            box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+            background: $surface !important;
+            //box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
             position: fixed;
         }
 

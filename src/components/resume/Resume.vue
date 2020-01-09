@@ -10,7 +10,6 @@
                     <app-education></app-education>
                     <app-experience></app-experience>
                     <app-skills></app-skills>
-                    <app-projects></app-projects>
                 </div>
             </div>
         </div>
@@ -22,14 +21,13 @@ import Sidenav from './Sidenav.vue';
 import Education from './Education.vue';
 import Experience from './Experience.vue';
 import Skills from './Skills.vue';
-import Projects from './Projects.vue';
+
 export default {
      components: {
         appSidenav: Sidenav,
         appEducation: Education,
         appExperience: Experience,
-        appSkills: Skills,
-        appProjects: Projects
+        appSkills: Skills
     }
 }
 </script>

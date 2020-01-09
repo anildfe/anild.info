@@ -5,15 +5,6 @@
                 <div class="col-md-12 col-lg-12 py-5">
                     <h2 class="mb-4 text-center heading">About Me</h2>
                     <p class="mb-3">A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    <div class="about-section_social py-1">
-                        <ul class="d-flex p-0 mt-4">
-                            <li class="mr-3"><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-github"></i></a></li>
-                            <li class="mr-3"><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-medium-m"></i></a></li>
-                            <li class="mr-3"><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li class="mr-3"><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="mr-3"><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -34,30 +25,6 @@ export default {
     // position: inherit;
     // background-size: cover;
     // background-repeat: no-repeat;
-
-    &_social {
-        ul {
-            list-style: none;
-            a {
-                width: 50px;
-                height: 50px;
-                background: $black;
-                border-radius: 50%;
-                text-decoration: none;
-                transition: all .3s ease;
-
-                i {
-                    font-size: 22px;
-                    color: $white;
-                }
-
-                &:hover {
-                    background: $primary;
-                    transition: all .3s ease;
-                }
-            }
-        }
-    }
 }
 </style>
 
