@@ -15,12 +15,18 @@
 
 <style lang="scss" scoped>
 nav {
+    margin-top: 2px;
     ul {
         list-style: none;
         li {
             a {
                 font-weight: 700;
-                color: $black;
+                color: $links;
+
+                &:hover {
+                    color: $primary;
+                    text-decoration: none;
+                }
             }
         }
     }

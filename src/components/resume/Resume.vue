@@ -1,7 +1,7 @@
 <template>
-    <section class="resume-section">
-        <div class="container">
-            <h2 class="mb-4 text-center heading">Resume</h2>
+    <section class="resume-section py-5">
+        <div class="container py-5">
+            <h2 class="mb-4 heading">Resume</h2>
             <div class="row">
                 <div class="col-md-3">
                     <app-sidenav></app-sidenav>

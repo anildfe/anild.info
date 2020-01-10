@@ -3,15 +3,22 @@
 //Colors
 $white: #fff;
 $black: #000000;
-$grey: #8B8B8B;
+$grey1: #8B8B8B;
+$grey2: #3F4040;
+$grey3: #323333;
 
-$background-dark: #2A2A2E;
-$background-light: $white;
-$surface: #2D2D32;
-$primary: #FAC921;
-$secondary: #000000;
-$surface-transparent: rgba($surface, .9);
+$primary-bg: #2D2E2E;
+$surface-bg: #2B2C2C;
+$nav-bg: #292A2A;
+$primary: #E0A80D;
+$secondary: #979899;
+$headings: #A4A5A6;
+$icons: #717273;
+$lines: #404242;
+$links: #FEFAEE;
+
+
 
 
 //Fonts
-$font-primary: 'Poppins',Arial, sans-serif;
+$font-primary: 'Lato', sans-serif;

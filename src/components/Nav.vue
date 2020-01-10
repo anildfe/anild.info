@@ -37,7 +37,7 @@ export default {
     z-index: 3;
 
     @include media-breakpoint-down(md) {
-        background: $surface !important;
+        background: $nav-bg !important;
         position: fixed;
 		top: 0;
 		padding-top: 0;
@@ -113,8 +113,7 @@ export default {
     &.scrolled {
         @include media-breakpoint-up(md) {
             margin-top: -82px;
-            background: $surface !important;
-            //box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+            background: $nav-bg !important;
             position: fixed;
         }
 
