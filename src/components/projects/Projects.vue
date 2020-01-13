@@ -24,6 +24,17 @@
                             <app-project></app-project>
                         </div>
                     </div>
+                    <b-modal v-bind:hide-footer="true" size="lg" id="my-modal" centered scrollable  title="">
+                        <p class="">Vertically centered modal!</p>
+                        <p class="">Vertically centered modal!</p>
+                        <p class="">Vertically centered modal!</p>
+                        <p class="">Vertically centered modal!</p>
+                        <p class="">Vertically centered modal!</p>
+                        <p class="">Vertically centered modal!</p>
+                        <p class="">Vertically centered modal!</p>
+                        <p class="">Vertically centered modal!</p>
+                        <p class="">Vertically centered modal!</p>
+                    </b-modal>
                 </div>
             </div>
         </div>

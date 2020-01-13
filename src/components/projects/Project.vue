@@ -1,5 +1,5 @@
 <template>
-    <div class="project-card">
+    <div class="project-card" v-b-modal="'my-modal'" >
         <img src="@/assets/images/train.jpg" alt="">
         <div class="project-card_content d-flex justify-content-center align-items-center p-4">
             <h3>A multi-level marketing company specializing in skincare products</h3>
@@ -24,6 +24,7 @@ export default {
         opacity: 0.7;
         @include transition(ease .6s);
     }
+
     &_content {
         position: absolute;
         left: 0;
@@ -56,7 +57,6 @@ export default {
         img {
             opacity: 0.2;
             @include transition(ease .8s);
-            @include transform(scale(1.1));
         }
 
         .project-card_content {

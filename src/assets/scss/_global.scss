@@ -32,3 +32,20 @@ h2.heading {
 .progress-bar {
     background-color: $primary !important;
 }
+
+.modal-content {
+    background-image: url('../images/train.jpg');
+    &:after {
+        content: "";
+        background-color: black;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+    .modal-header {
+        border-bottom: 0;
+    }
+}
