@@ -1,28 +1,31 @@
 <template>
-    <section class="projects-section">
-        <h2 class="mb-4 text-center heading">Projects</h2>
-        <div class="row">
-           <div class="col-md-4 mb-4">
-               <app-project></app-project>
-               <b-modal id="modal-1" title="BootstrapVue">
-                    <p class="my-4">Hello from modal!</p>
-                </b-modal>
-           </div>
-           <div class="col-md-4 mb-4">
-               <app-project></app-project>
-           </div>
-           <div class="col-md-4 mb-4">
-               <app-project></app-project>
-           </div>
-           <div class="col-md-4 mb-4">
-               <app-project></app-project>
-           </div>
-           <div class="col-md-4 mb-4">
-               <app-project></app-project>
-           </div>
-           <div class="col-md-4 mb-4">
-               <app-project></app-project>
-           </div>
+    <section class="projects-section surface-background py-5">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-12 col-lg-12 py-5">
+                    <h2 class="mb-5 heading">Projects</h2>
+                    <div class="row">
+                        <div class="col-md-4 projects-section_item">
+                            <app-project></app-project>
+                        </div>
+                        <div class="col-md-4 projects-section_item">
+                            <app-project></app-project>
+                        </div>
+                        <div class="col-md-4 projects-section_item">
+                            <app-project></app-project>
+                        </div>
+                        <div class="col-md-4 projects-section_item">
+                            <app-project></app-project>
+                        </div>
+                        <div class="col-md-4 projects-section_item">
+                            <app-project></app-project>
+                        </div>
+                        <div class="col-md-4 projects-section_item">
+                            <app-project></app-project>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -39,5 +42,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.projects-section {
+    &_item {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        margin-bottom: 30px;
+    }
+}
 
 </style>

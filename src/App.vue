@@ -4,9 +4,9 @@
     <app-home></app-home>
     <app-about></app-about>
     <app-resume></app-resume>
-    <!-- <app-projects></app-projects> -->
+    <app-projects></app-projects>
     <!-- <app-blog></app-blog> -->
-    <!-- <app-contact></app-contact> -->
+    <app-contact></app-contact>
 </div>
 </template>
 

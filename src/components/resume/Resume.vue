@@ -38,10 +38,10 @@ export default {
         margin-bottom: 70px;
 
         h2 {
-            font-weight: 800;
+            font-weight: 700;
             color: $primary;
             margin-bottom: 30px;
-            font-size: 30px;
+            font-size: 24px;
         }
     }
 }

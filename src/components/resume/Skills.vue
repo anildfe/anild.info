@@ -2,22 +2,22 @@
     <section class="resume-section_sub-section skills-section">
         <h2>Skills</h2>
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-5">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-5">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-5">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-5">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-5">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-5">
                 <app-skill-progress></app-skill-progress>
             </div>
         </div>
