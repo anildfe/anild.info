@@ -1,23 +1,23 @@
 <template>
-    <section class="resume-section_sub-section skills-section">
+    <section class="resume-section_sub-section skills-section mb-0" id="skills">
         <h2>Skills</h2>
         <div class="row">
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6 mt-5">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6 mt-5">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6 mt-5">
                 <app-skill-progress></app-skill-progress>
             </div>
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6 mt-5">
                 <app-skill-progress></app-skill-progress>
             </div>
         </div>

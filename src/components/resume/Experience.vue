@@ -1,5 +1,5 @@
 <template>
-    <section class="resume-section_sub-section experience-section">
+    <section class="resume-section_sub-section experience-section" id="exp">
         <h2>Experience</h2>
         <div class="experience-section_cards">
             <app-timeline-card></app-timeline-card>

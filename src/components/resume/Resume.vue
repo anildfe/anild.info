@@ -1,5 +1,5 @@
 <template>
-    <section class="resume-section py-5">
+    <section class="resume-section py-5" id="resume">
         <div class="container py-5">
             <h2 class="mb-4 heading">Resume</h2>
             <div class="row">

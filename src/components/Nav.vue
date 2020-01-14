@@ -1,20 +1,24 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" type="dark" variant="info" class="ad-nav">
+        <b-navbar toggleable="lg" type="dark" variant="info" class="ad-nav" :class="[isScrolled, isAwake, isSleep]">
             <div class="container">
                 <b-navbar-brand href="#">Brand</b-navbar-brand>
-
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
                 <b-collapse id="nav-collapse" is-nav>
-                    <b-navbar-nav class="ml-auto">
+                    <scrollactive 
+                        tag="ul" 
+                        :offset="350" 
+                        :scrollOffset="80"
+                        :modifyUrl="false"
+                        activeClass="active"
+                        class="navbar-nav ml-auto">
                         <b-nav-item href="#"><span>Home</span></b-nav-item>
-                        <b-nav-item href="#"><span>About</span></b-nav-item>
-                        <b-nav-item href="#"><span>Resume</span></b-nav-item>
-                        <b-nav-item href="#"><span>Projects</span></b-nav-item>
-                        <b-nav-item href="#"><span>Blog</span></b-nav-item>
-                        <b-nav-item href="#"><span>Contact</span></b-nav-item>
-                    </b-navbar-nav>
+                        <b-nav-item href="#about" link-classes="scrollactive-item"><span>About</span></b-nav-item>
+                        <b-nav-item href="#resume" link-classes="scrollactive-item"><span>Resume</span></b-nav-item>
+                        <b-nav-item href="#projects" link-classes="scrollactive-item"><span>Projects</span></b-nav-item>
+                        <!-- <b-nav-item href="#blog" link-classes="scrollactive-item"><span>Blog</span></b-nav-item> -->
+                        <b-nav-item href="#contact" link-classes="scrollactive-item"><span>Contact</span></b-nav-item>
+                    </scrollactive >
                 </b-collapse>
             </div>
         </b-navbar>
@@ -22,7 +26,38 @@
 </template>
 
 <script>
+import debounce from 'lodash/debounce';
 export default {
+    data: () => {
+        return {
+            isScrolled: '',
+            isAwake: '',
+            isSleep: ''
+        }
+    },
+    methods: {
+        handleScroll() {
+            if(window.scrollY > 150) {
+                this.isScrolled = 'scrolled';
+            }
+            if(window.scrollY > 350) {
+                this.isAwake = 'awake';
+                this.isSleep = '';
+            }
+            if(window.scrollY < 350 && window.scrollY > 150) {
+                if(this.isAwake) { this.isSleep = 'sleep' };
+                this.isAwake = '';
+            }
+            if(window.scrollY < 150) {
+                this.isScrolled = '';
+                this.isSleep = '';
+            }
+        }
+    },
+    created() {
+        this.handleDebouncedScroll = debounce(this.handleScroll, 0);
+        window.addEventListener('scroll', this.handleDebouncedScroll);
+    }
     
 }
 </script>
@@ -100,12 +135,10 @@ export default {
             }
         }
 
-        &.active {
-            > .nav-link {
-                color: $primary;
-                span::before {
-                    @include transform(scaleX(1));
-                }
+        .active.nav-link {
+            color: $primary;
+            span::before {
+                @include transform(scaleX(1));
             }
         }
     }
@@ -120,6 +153,12 @@ export default {
         &.awake {
             @include media-breakpoint-up(md) {
                 margin-top: 0px;
+                transition: .3s all ease-out;
+            }
+        }
+        
+        &.sleep {
+            @include media-breakpoint-up(md) {
                 transition: .3s all ease-out;
             }
 		}

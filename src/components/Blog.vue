@@ -1,5 +1,5 @@
 <template>
-    <section class="blog-section">
+    <section class="blog-section" id="blog">
         <h2>Blog</h2>
     </section>
 </template>

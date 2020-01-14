@@ -1,5 +1,5 @@
 <template>
-    <section class="about-section surface-background py-5">
+    <section class="about-section surface-background py-5" id="about">
         <div class="container">
             <div class="row d-flex no-gutters">
                 <div class="col-md-12 col-lg-12 py-5">

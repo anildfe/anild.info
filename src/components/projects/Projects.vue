@@ -1,5 +1,5 @@
 <template>
-    <section class="projects-section surface-background py-5">
+    <section class="projects-section surface-background py-5" id="projects">
         <div class="container">
             <div class="row d-flex no-gutters">
                 <div class="col-md-12 col-lg-12 py-5">
@@ -24,18 +24,8 @@
                             <app-project></app-project>
                         </div>
                     </div>
-                    <b-modal v-bind:hide-footer="true" size="lg" id="my-modal" centered scrollable  title="">
-                        <p class="">Vertically centered modal!</p>
-                        <p class="">Vertically centered modal!</p>
-                        <p class="">Vertically centered modal!</p>
-                        <p class="">Vertically centered modal!</p>
-                        <p class="">Vertically centered modal!</p>
-                        <p class="">Vertically centered modal!</p>
-                        <p class="">Vertically centered modal!</p>
-                        <p class="">Vertically centered modal!</p>
-                        <p class="">Vertically centered modal!</p>
-                    </b-modal>
                 </div>
+                <app-project-details-modal></app-project-details-modal>
             </div>
         </div>
     </section>
@@ -43,10 +33,12 @@
 
 <script>
 import Project from './Project.vue';
+import ProjectDetailsModal from './Project-details-modal.vue';
 
 export default {
     components: {
-        appProject: Project
+        appProject: Project,
+        appProjectDetailsModal: ProjectDetailsModal
     }
 }
 

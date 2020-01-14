@@ -1,5 +1,5 @@
 <template>
-<section class="contact-section py-5">
+<section class="contact-section py-5" id="contact">
     <div class="container">
         <div class="row d-flex no-gutters">
             <div class="col-md-12 col-lg-12 py-5">
