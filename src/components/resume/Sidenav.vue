@@ -2,9 +2,9 @@
     <nav class="d-none d-sm-block">
         <scrollactive 
         tag="ul" 
-        :offset="300" 
+        :offset="offset" 
         :highlightFirstItem="true" 
-        :scrollOffset="200"
+        :scrollOffset="scrollOffset"
         :modifyUrl="false"
         class="p-0">
             <li class="mb-3"><a href="#edu" class="scrollactive-item"><span>Education</span></a></li>
@@ -15,7 +15,15 @@
 </template>
 
 <script>
-
+import { appConstants } from '@/common/constants.js';
+export default {
+    data: () => {
+        return {
+            offset: appConstants.RESUME_NAV_OFFSET,
+            scrollOffset: appConstants.RESUME_NAV_SCROLL_OFFSET
+        }
+    }
+}
 </script>
 
 <style lang="scss" scoped>

@@ -7,8 +7,8 @@
                 <b-collapse id="nav-collapse" is-nav>
                     <scrollactive 
                         tag="ul" 
-                        :offset="350" 
-                        :scrollOffset="80"
+                        :offset="offset" 
+                        :scrollOffset="getScrollOffset"
                         :modifyUrl="false"
                         activeClass="active"
                         class="navbar-nav ml-auto">
@@ -27,28 +27,35 @@
 
 <script>
 import debounce from 'lodash/debounce';
+import { appConstants } from '@/common/constants.js'
 export default {
     data: () => {
         return {
             isScrolled: '',
             isAwake: '',
-            isSleep: ''
+            isSleep: '',
+            offset: appConstants.MAIN_NAV_OFFSET
+        }
+    },
+    computed: {
+        getScrollOffset() {
+            return screen.width > appConstants.WINDOW_TAB_WIDTH_MAX ? appConstants.MAIN_NAV_OFFSET_SCROLL_DESKTOP : appConstants.MAIN_NAV_OFFSET_SCROLL_MOBILE;
         }
     },
     methods: {
         handleScroll() {
-            if(window.scrollY > 150) {
+            if(window.scrollY > appConstants.MAIN_NAV_HIDE_OFFSET) {
                 this.isScrolled = 'scrolled';
             }
-            if(window.scrollY > 350) {
+            if(window.scrollY > appConstants.MAIN_NAV_SHOW_OFFSET) {
                 this.isAwake = 'awake';
                 this.isSleep = '';
             }
-            if(window.scrollY < 350 && window.scrollY > 150) {
+            if(window.scrollY < appConstants.MAIN_NAV_SHOW_OFFSET && window.scrollY > appConstants.MAIN_NAV_HIDE_OFFSET) {
                 if(this.isAwake) { this.isSleep = 'sleep' };
                 this.isAwake = '';
             }
-            if(window.scrollY < 150) {
+            if(window.scrollY < appConstants.MAIN_NAV_HIDE_OFFSET) {
                 this.isScrolled = '';
                 this.isSleep = '';
             }
@@ -57,8 +64,10 @@ export default {
     created() {
         this.handleDebouncedScroll = debounce(this.handleScroll, 0);
         window.addEventListener('scroll', this.handleDebouncedScroll);
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleDebouncedScroll);
     }
-    
 }
 </script>
 
@@ -99,7 +108,7 @@ export default {
             text-transform: uppercase;
             opacity: 1 !important;
 
-            @include media-breakpoint-down(lg){
+            @include media-breakpoint-down(md){
                color: $white;
                padding:  7px 0;
             }
@@ -109,7 +118,7 @@ export default {
                 display: block;
                 padding-bottom: 2px;
 
-                @include media-breakpoint-down(lg){
+                @include media-breakpoint-down(md){
                     display: inline-block;
                 }
 

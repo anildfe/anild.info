@@ -1,6 +1,6 @@
 <template>
     <div class="social-section py-1">
-        <ul class="d-flex p-0 justify-content-around">
+        <ul class="d-inline-flex p-0 justify-content-around">
             <li><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-github"></i></a></li>
             <li><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-medium-m"></i></a></li>
             <li><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-linkedin-in"></i></a></li>
@@ -20,28 +20,30 @@ export default {
 .social-section {
     ul {
         list-style: none;
-        width: 40%;
         margin: 0 auto;
-        a {
-            width: 38px;
-            height: 38px;
-            text-decoration: none;
-            border-radius: 3px;
-            transition: all .3s ease;
-            border: 2px solid $grey2;
-            background: $grey2;
-
-            i {
-                font-size: 20px;
-                color: $icons;
-            }
-
-            &:hover {
+        li {
+            margin: 0 10px;
+            a {
+                width: 38px;
+                height: 38px;
+                text-decoration: none;
+                border-radius: 3px;
                 transition: all .3s ease;
-                background-color: $grey3;
+                border: 2px solid $grey2;
+                background: $grey2;
 
                 i {
-                    color: $links;
+                    font-size: 20px;
+                    color: $icons;
+                }
+
+                &:hover {
+                    transition: all .3s ease;
+                    background-color: $grey3;
+
+                    i {
+                        color: $links;
+                    }
                 }
             }
         }
