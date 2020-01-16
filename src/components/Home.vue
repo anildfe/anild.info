@@ -1,5 +1,5 @@
 <template>
-    <section class="home-section">
+    <section class="home-section" id="home">
         <vue-particles
             color="#717273"
             :particleOpacity="0.7"

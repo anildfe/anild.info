@@ -12,7 +12,7 @@
                         :modifyUrl="false"
                         activeClass="active"
                         class="navbar-nav ml-auto">
-                        <b-nav-item href="#"><span>Home</span></b-nav-item>
+                        <b-nav-item href="#home" link-classes="scrollactive-item"><span>Home</span></b-nav-item>
                         <b-nav-item href="#about" link-classes="scrollactive-item"><span>About</span></b-nav-item>
                         <b-nav-item href="#resume" link-classes="scrollactive-item"><span>Resume</span></b-nav-item>
                         <b-nav-item href="#projects" link-classes="scrollactive-item"><span>Projects</span></b-nav-item>
@@ -96,6 +96,7 @@ export default {
             padding: 7px 20px;
             color: $white;
             font-weight: 400;
+            text-transform: uppercase;
             opacity: 1 !important;
 
             @include media-breakpoint-down(lg){
@@ -139,6 +140,15 @@ export default {
             color: $primary;
             span::before {
                 @include transform(scaleX(1));
+            }
+        }
+
+        &:first-child {
+            .active.nav-link {
+                color: $white;
+                span::before {
+                    @include transform(scaleX(0));
+                }
             }
         }
     }
