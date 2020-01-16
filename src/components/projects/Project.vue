@@ -18,6 +18,7 @@ export default {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    outline: none;
 
     img {
         width: 100%;

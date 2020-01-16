@@ -29,6 +29,7 @@ nav {
             a {
                 font-weight: 700;
                 color: $links;
+                text-transform: uppercase;
 
                 span {
                     position: relative;
