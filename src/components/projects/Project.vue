@@ -1,15 +1,21 @@
 <template>
-    <div class="project-card" v-b-modal="'my-modal'" >
-        <img src="@/assets/images/train.jpg" alt="">
+    <div class="project-card" @click="sendDataToProjects(projectData)">
+        <!-- <img src="@/assets/images/train.jpg" alt=""> -->
+        <img :src="require(`@/assets/images/${projectData.imageName}`)" :alt="projectData.title">
         <div class="project-card_content d-flex justify-content-center align-items-center p-4">
-            <h3>A multi-level marketing company specializing in skincare products</h3>
+            <h3>{{projectData.title}}</h3>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    
+    props: ['projectData'],
+    methods: {
+        sendDataToProjects(projectData) {
+            this.$emit('clicked', projectData.details)
+        }
+    }
 }
 </script>
 

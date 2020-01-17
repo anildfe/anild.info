@@ -1,31 +1,23 @@
 <template>
-    <b-modal v-bind:hide-footer="true" size="lg" id="my-modal" centered scrollable>
+    <b-modal v-bind:hide-footer="true" size="lg" id="project-modal" centered scrollable>
         <div class="px-4 project-details-content">
             <div>
                 <h4>ROLE</h4>
-                <p>UI Lead</p>
+                <p>{{projectDetails.role}}</p>
             </div>
             <div>
                 <h4>TECHNICAL STACK USED</h4>
-                <p>Tech stack list</p>
+                <p>
+                    <template v-for="(stack, index) in projectDetails.stack">
+                        {{stack}}<template v-if="index + 1 < projectDetails.stack.length">, </template> 
+                    </template>
+                </p>
             </div>
             <div>
                 <h4>WORK DONE</h4>
                 <ul>
-                    <li>
-                        Setup the Ionic project from scratch and built complete.
-                    </li>
-                    <li>
-                        Completely owned the train status module which is the most complex functionality of the application.
-                    </li>
-                    <li>
-                        Worked on performance optimization.
-                    </li>
-                    <li>
-                        AEM integration for content pages by consuming REST services.
-                    </li>
-                    <li>
-                        Wrote unit test cases using Jasmine and Karma.
+                    <li v-for="workDone in projectDetails.workDone" :key="workDone">
+                        {{workDone}}
                     </li>
                 </ul>
             </div>
@@ -35,7 +27,7 @@
 
 <script>
 export default {
-
+    props: ['projectDetails']
 }
 </script>
 

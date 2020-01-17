@@ -4,18 +4,18 @@
         <div class="timeline-card_content row m-0 pl-3">
             <div class="col-md-5">
                 <div class="timeline-card_content_timeframe">
-                    2015 – Present
+                    {{ cardData.timeFrame }}
                 </div>
                 <h3 class="timeline-card_content_heading mt-2">
-                    Unicorn Incubator Inc.
+                    {{ cardData.heading }}
                 </h3>
                 <h4 class="timeline-card_content_title">
-                    Senior Interface Designer
+                    {{ cardData.title }}
                 </h4>
             </div>
             <div class="col-md-7">
                 <p>
-                    Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+                    {{ cardData.text }}
                 </p>
             </div>
         </div>
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-    
+    props: ['cardData']
 }
 </script>
 

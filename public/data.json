@@ -1,0 +1,194 @@
+{
+    "name": {
+        "firstName": "FName",
+        "lastName": "LName"
+    },
+    "socials": [
+        {
+            "title": "Github",
+            "url": "http://www.github.com",
+            "iconClass": "fa-github"
+        },
+        {
+            "title": "Medium",
+            "url": "http://www.medium.com",
+            "iconClass": "fa-medium-m"
+        },
+        {
+            "title": "Linkedin",
+            "url": "http://www.medium.com",
+            "iconClass": "fa-linkedin-in"
+        },
+        {
+            "title": "Facebook",
+            "url": "http://www.medium.com",
+            "iconClass": "fa-facebook-f"
+        },
+        {
+            "title": "Instagram",
+            "url": "http://www.medium.com",
+            "iconClass": "fa-instagram"
+        }
+    ],
+    "aboutMe": {
+        "text": "123 A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "expertise": [
+            {
+                "title": "FRONTEND DEVELOPMENT",
+                "content": "content"
+            },
+            {
+                "title": "UI ARCHITECTURE",
+                "content": "content"
+            },
+            {
+                "title": "RESPONSIVE WEB DEVELOPMENT",
+                "content": "content"
+            },
+            {
+                "title": "HYBRID MOBILE DEVELOPMENT",
+                "content": "content"
+            },
+            {
+                "title": "ACCESSIBILITY AND SECURITY",
+                "content": "content"
+            },
+            {
+                "title": "PERFORMANCE TUNING",
+                "content": "content"
+            }
+        ]
+    },
+    "education": [
+        {
+            "timeFrame": "2020 - Present",
+            "heading": "JNTU, India",
+            "title": "MCA",
+            "text": "123Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
+        },
+        {
+            "timeFrame": "2017 - Present",
+            "heading": "JNTU, India",
+            "title": "MCA2",
+            "text": "321Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
+        }
+    ],
+    "experience": [
+        {
+            "timeFrame": "2015 - Present",
+            "heading": "testJNTU, India",
+            "title": "MCA3",
+            "text": "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
+        },
+        {
+            "timeFrame": "2015 - Present",
+            "heading": "tst2 JNTU, India",
+            "title": "MCA4",
+            "text": "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML1",
+            "percentage": 90
+        },
+        {
+            "name": "HTML2",
+            "percentage": 90
+        },
+        {
+            "name": "HTML3",
+            "percentage": 70
+        },
+        {
+            "name": "HTML4",
+            "percentage": 90
+        },
+        {
+            "name": "HTML5",
+            "percentage": 90
+        },
+        {
+            "name": "HTML6",
+            "percentage": 90
+        }
+    ],
+    "projects": [
+        {
+            "id": 0,
+            "imageName": "train.jpg",
+            "title": "A multi-level marketing company specializing in skincare products",
+            "details": {
+                "role": "role",
+                "stack": [
+                    "stack 1",
+                    "stack 2",
+                    "stack 3"
+                ],
+                "workDone": [
+                    "1Setup the Ionic project from scratch and built complete.",
+                    "2Setup the Ionic project from scratch and built complete.",
+                    "3Setup the Ionic project from scratch and built complete."
+                ]
+            }
+        },
+        {
+            "id": 1,
+            "imageName": "train.jpg",
+            "title": "A multi-level marketing company specializing in skincare products",
+            "details": {
+                "role": "role1",
+                "stack": [
+                    "stack 1",
+                    "stack 2",
+                    "stack 3"
+                ],
+                "workDone": [
+                    "1Setup the Ionic project from scratch and built complete.",
+                    "2Setup the Ionic project from scratch and built complete.",
+                    "3Setup the Ionic project from scratch and built complete."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "imageName": "train.jpg",
+            "title": "A multi-level marketing company specializing in skincare products",
+            "details": {
+                "role": "role2",
+                "stack": [
+                    "stack 1",
+                    "stack 2",
+                    "stack 3"
+                ],
+                "workDone": [
+                    "1Setup the Ionic project from scratch and built complete.",
+                    "2Setup the Ionic project from scratch and built complete.",
+                    "3Setup the Ionic project from scratch and built complete."
+                ]
+            }
+        }
+    ],
+    "contacts": [
+        {
+            "type": "Location",
+            "value": "Hyderabad, India",
+            "url": "test"
+        },
+        {
+            "type": "Location1",
+            "value": "Hyderabad, India",
+            "url": "test"
+        },
+        {
+            "type": "Location2",
+            "value": "Hyderabad, India",
+            "url": "test"
+        },
+        {
+            "type": "Location3",
+            "value": "Hyderabad, India",
+            "url": "test"
+        }
+    ]
+}

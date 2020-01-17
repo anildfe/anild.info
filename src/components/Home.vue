@@ -22,7 +22,11 @@
                 <div class="col-lg-8 col-md-6 d-flex align-items-center">
                     <div class="text text-center container p-0">
                         <span class="sub-heading">Hey! I am</span>
-                        <h1>Name Name</h1>
+                        <h1 
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                        v-if="name"
+                        >{{name.firstName}} {{name.lastName}}</h1>
                         <app-social></app-social>
                     </div>
                 </div>
@@ -33,9 +37,13 @@
 
 <script>
 import Social from './Social.vue'
+import { mapGetters } from 'vuex'
 export default {
     components: {
         appSocial: Social
+    },
+    computed: {
+        ...mapGetters(['name'])
     }
 }
 </script>

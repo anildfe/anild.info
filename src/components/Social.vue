@@ -1,18 +1,23 @@
 <template>
-    <div class="social-section py-1">
+    <div 
+    data-aos="fade-up"
+    data-aos-duration="500"
+    data-aos-delay="200"
+    class="social-section py-1">
         <ul class="d-inline-flex p-0 justify-content-around">
-            <li><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-github"></i></a></li>
-            <li><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-medium-m"></i></a></li>
-            <li><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="" class="d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></a></li>
+            <li v-for="social in socials" :key="social.title">
+                <a :href="social.url" class="d-flex justify-content-center align-items-center"><i class="fab" :class="social.iconClass"></i></a>
+            </li>
         </ul>
     </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
-    
+    computed: {
+        ...mapGetters(['socials'])
+    }
 }
 </script>
 

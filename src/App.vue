@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import Nav from './components/Nav.vue';
 import Home from './components/Home.vue';
 import About from './components/About.vue';
@@ -28,6 +29,12 @@ export default {
         appProjects: Projects,
         appBlog: Blog,
         appContact: Contact
+    },
+    methods: {
+        ...mapActions(['fetchAdData'])
+    },
+    created() {
+        this.fetchAdData();
     }
 }
 </script>

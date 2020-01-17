@@ -5,21 +5,9 @@
             <div class="col-md-12 col-lg-12 py-5">
                 <h2 class="mb-5 heading">Contact Me</h2>
                 <div class="contact-section_list row m-0 pb-3">
-                    <div class="col-md-3 col-sm-6 p-0 contact-section_list_item">
-                        <h4>Location</h4>
-                        <p>Hyderabad, India</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 p-0 contact-section_list_item">
-                        <h4>Location</h4>
-                        <p>Hyderabad, India</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 p-0 contact-section_list_item">
-                        <h4>Email</h4>
-                        <p><a href="">Hyderabad, India</a></p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 p-0 contact-section_list_item">
-                        <h4>Location</h4>
-                        <p>Hyderabad, India</p>
+                    <div class="col-md-3 col-sm-6 p-0 contact-section_list_item" v-for="contact in contacts" :key="contact.type">
+                        <h4>{{ contact.type }}</h4>
+                        <p><a :href="contact.url">{{ contact.value }}</a></p>
                     </div>
                 </div>
 
@@ -30,8 +18,11 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
-    
+    computed: {
+        ...mapGetters(['contacts'])
+    }
 }
 </script>
 

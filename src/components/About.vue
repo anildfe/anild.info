@@ -1,48 +1,21 @@
 <template>
     <section class=" surface-background py-5" id="about">
-        <div class="container">
+        <div class="container" v-if="aboutMe">
             <div class="row d-flex no-gutters">
                 <div class="col-md-12 col-lg-12 py-5">
                     <h2 class="mb-4 heading">About Me</h2>
-                    <p class="mb-0">A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <p class="mb-0">{{aboutMe.text}}</p>
                 </div>
             </div>
             <div class="about-section_expertise">
                 <ol class="row d-flex flex-wrap m-0 p-0">
-                    <li class="col-md-4 d-flex p-0">
+                    <li 
+                    v-for="expertiseItem in aboutMe.expertise" 
+                    :key="expertiseItem.title"
+                    class="col-md-4 d-flex p-0">
                         <div class="d-flex flex-column">
-                            <h4>Frontend development</h4>
-                            <p>Content</p>
-                        </div>
-                    </li>
-                    <li class="col-md-4 d-flex p-0">
-                        <div class="d-flex flex-column">
-                            <h4>UI Architecture</h4>
-                            <p>Content</p>
-                        </div>
-                    </li>
-                    <li class="col-md-4 d-flex p-0">
-                        <div class="d-flex flex-column">
-                            <h4>Responsive web development</h4>
-                            <p>Content</p>
-                        </div>
-                    </li>
-                    <li class="col-md-4 d-flex p-0">
-                        <div class="d-flex flex-column">
-                            <h4>HYbrid mobile development</h4>
-                            <p>Content</p>
-                        </div>
-                    </li>
-                    <li class="col-md-4 d-flex p-0">
-                        <div class="d-flex flex-column">
-                            <h4>Accessibility and security</h4>
-                            <p>Content</p>
-                        </div>
-                    </li>
-                    <li class="col-md-4 d-flex p-0">
-                        <div class="d-flex flex-column">
-                            <h4>performance tuning</h4>
-                            <p>Content</p>
+                            <h4>{{expertiseItem.title}}</h4>
+                            <p>{{expertiseItem.content}}</p>
                         </div>
                     </li>
                 </ol>
@@ -52,8 +25,11 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
-    
+    computed: {
+        ...mapGetters(['aboutMe'])
+    }
 }
 </script>
 

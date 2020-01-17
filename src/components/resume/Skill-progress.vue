@@ -1,13 +1,13 @@
 <template>
     <div class="progress-wrap">
-        <h3>HTML <span>90%</span></h3>
-        <b-progress height="5px" :value="90"></b-progress>
+        <h3>{{skillData.name}} <span>{{skillData.percentage}}%</span></h3>
+        <b-progress height="5px" :value="skillData.percentage"></b-progress>
     </div>
 </template>
 
 <script>
 export default {
-    
+    props: ['skillData']
 }
 </script>
 
