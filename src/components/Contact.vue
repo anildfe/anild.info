@@ -1,6 +1,6 @@
 <template>
-<section class="contact-section py-5" id="contact">
-    <div class="container">
+<section class="contact-section py-5 surface-background pb-5" id="contact">
+    <div class="container pb-5">
         <div class="row d-flex no-gutters">
             <div class="col-md-12 col-lg-12 py-5">
                 <h2 class="mb-5 heading">Contact Me</h2>
