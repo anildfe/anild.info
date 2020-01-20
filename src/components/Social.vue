@@ -1,12 +1,8 @@
 <template>
-    <div 
-    data-aos="fade-up"
-    data-aos-duration="500"
-    data-aos-delay="200"
-    class="social-section py-1">
+    <div class="social-section py-1">
         <ul class="d-inline-flex p-0 justify-content-around">
             <li v-for="social in socials" :key="social.title">
-                <a :href="social.url" class="d-flex justify-content-center align-items-center"><i class="fab" :class="social.iconClass"></i></a>
+                <a :href="social.url" class="d-flex justify-content-center align-items-center" target="_new"><i class="fab" :class="social.iconClass"></i></a>
             </li>
         </ul>
     </div>

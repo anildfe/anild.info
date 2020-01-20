@@ -4,7 +4,8 @@
             <div class="row d-flex no-gutters">
                 <div class="col-md-12 col-lg-12 py-5">
                     <h2 class="mb-4 heading">About Me</h2>
-                    <p class="mb-0">{{aboutMe.text}}</p>
+                    <!-- <p class="mb-0">{{aboutMe.text}}</p> -->
+                    <p class="mb-0" v-html="aboutMe.text"></p>
                 </div>
             </div>
             <div class="about-section_expertise">
@@ -12,13 +13,16 @@
                     <li 
                     v-for="expertiseItem in aboutMe.expertise" 
                     :key="expertiseItem.title"
-                    class="col-md-4 d-flex p-0">
+                    class="col-md-4 d-flex p-0 mb-2">
                         <div class="d-flex flex-column">
                             <h4>{{expertiseItem.title}}</h4>
                             <p>{{expertiseItem.content}}</p>
                         </div>
                     </li>
                 </ol>
+            </div>
+            <div class="about-section_download d-flex mt-4">
+                <a :href="aboutMe.cvUrl" class="btn btn-primary">Download CV</a>
             </div>
         </div>
     </section>
@@ -59,6 +63,30 @@ export default {
                     margin: 5px 0 0;
                 }
             }
+        }
+    }
+
+    &_download {
+        a {
+            background-color: $primary;
+            border-color: $primary;
+            text-transform: uppercase;
+            font-size: 18px;
+            padding: 10px 25px;
+            @include transition(all 0.3s ease-in-out 0s);
+
+            &:hover, &:active, &:focus {
+                background-color: $primary !important;
+                border-color: $primary !important;
+                opacity: 0.8;
+                @include transition(all 0.3s ease-in-out 0s);
+                box-shadow: none;
+            }
+            
+        }
+
+        @include media-breakpoint-down(sm) {
+            justify-content: center;
         }
     }
 }

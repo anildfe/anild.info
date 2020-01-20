@@ -1,22 +1,21 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" type="dark" variant="info" class="ad-nav" :class="[isScrolled, isAwake, isSleep]">
+        <b-navbar toggleable="lg" type="dark" variant="info" class="ad-nav py-3" :class="[isScrolled, isAwake, isSleep]">
             <div class="container">
-                <b-navbar-brand href="#">Brand</b-navbar-brand>
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-                <b-collapse id="nav-collapse" is-nav>
+                <b-collapse id="nav-collapse" is-nav class="justify-content-center">
                     <scrollactive 
                         tag="ul" 
                         :offset="offset" 
                         :scrollOffset="getScrollOffset"
                         :modifyUrl="false"
                         activeClass="active"
-                        class="navbar-nav ml-auto">
+                        class="navbar-nav">
                         <b-nav-item href="#home" link-classes="scrollactive-item"><span>Home</span></b-nav-item>
                         <b-nav-item href="#about" link-classes="scrollactive-item"><span>About</span></b-nav-item>
                         <b-nav-item href="#resume" link-classes="scrollactive-item"><span>Resume</span></b-nav-item>
                         <b-nav-item href="#projects" link-classes="scrollactive-item"><span>Projects</span></b-nav-item>
-                        <!-- <b-nav-item href="#blog" link-classes="scrollactive-item"><span>Blog</span></b-nav-item> -->
+                        <b-nav-item href="#blog" link-classes="scrollactive-item"><span>Blog</span></b-nav-item>
                         <b-nav-item href="#contact" link-classes="scrollactive-item"><span>Contact</span></b-nav-item>
                     </scrollactive >
                 </b-collapse>
@@ -126,7 +125,7 @@ export default {
                     content: "";
                     position: absolute;
                     width: 100%;
-                    height: 2px;
+                    height: 0.15rem;
                     bottom: 0;
                     left: 0;
                     background: $primary;
@@ -154,9 +153,16 @@ export default {
 
         &:first-child {
             .active.nav-link {
-                color: $white;
+                color: $white; 
                 span::before {
                     @include transform(scaleX(0));
+                }
+            }
+            &:hover {
+               .active.nav-link {
+                    span::before {
+                        @include transform(scaleX(1));
+                    }
                 }
             }
         }

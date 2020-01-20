@@ -1,170 +1,292 @@
 {
     "name": {
-        "firstName": "FName",
-        "lastName": "LName"
+        "firstName": "Anil",
+        "lastName": "Dusarlapudi"
     },
     "socials": [
         {
             "title": "Github",
-            "url": "http://www.github.com",
+            "url": "https://github.com/anildfe",
             "iconClass": "fa-github"
         },
         {
             "title": "Medium",
-            "url": "http://www.medium.com",
+            "url": "https://medium.com/@anildfe",
             "iconClass": "fa-medium-m"
         },
         {
             "title": "Linkedin",
-            "url": "http://www.medium.com",
+            "url": "https://www.linkedin.com/in/anil-dusarlapudi/",
             "iconClass": "fa-linkedin-in"
         },
         {
             "title": "Facebook",
-            "url": "http://www.medium.com",
+            "url": "https://www.facebook.com/anild7177",
             "iconClass": "fa-facebook-f"
         },
         {
             "title": "Instagram",
-            "url": "http://www.medium.com",
+            "url": "https://www.instagram.com/anil_dusarlapudi/",
             "iconClass": "fa-instagram"
         }
     ],
     "aboutMe": {
-        "text": "123 A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "text": "Hello, I'm Anil, currently working as Associate Techincal Lead at TA Digital. Apart from being a technology enthusiast, I am a traveler and nature lover. <br/>I have 8+ years of extensive development experience in building numerous large-scale, performance-oriented enterprise web applications from scratch. Below are the areas that I hold my expertise in...",
         "expertise": [
             {
                 "title": "FRONTEND DEVELOPMENT",
-                "content": "content"
+                "content": "Front-End development using HTML, CSS, JavaScript, Angular, TypeScript, Vue JS, Handlebars, SCSS, Bootstrap, Webpack, Gulp"
             },
             {
                 "title": "UI ARCHITECTURE",
-                "content": "content"
+                "content": "In depth experience in setting up frontend application architecture from scratch and integrating with backend platforms like AEM, Hybris, Sitecore"
             },
             {
                 "title": "RESPONSIVE WEB DEVELOPMENT",
-                "content": "content"
+                "content": "In depth experience in responsive web development using Bootstrap, CSS Flex-box, CSS Grid. Good experience in using CSS Pre-processors (SCSS, LESS)."
             },
             {
                 "title": "HYBRID MOBILE DEVELOPMENT",
-                "content": "content"
+                "content": "Experience in Hybrid mobile application development using Ionic framework"
             },
             {
                 "title": "ACCESSIBILITY AND SECURITY",
-                "content": "content"
+                "content": "Knowledge of accessibility standards such as WCAG, 508 and knowledge of security best practices"
             },
             {
                 "title": "PERFORMANCE TUNING",
-                "content": "content"
+                "content": "Expert knowledge of browser behavior, performance, compatibility and cross browser issues and solutions"
             }
-        ]
+        ],
+        "cvUrl": "test"
     },
     "education": [
         {
-            "timeFrame": "2020 - Present",
-            "heading": "JNTU, India",
-            "title": "MCA",
-            "text": "123Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
+            "timeFrame": "2008 - 2011",
+            "heading": "Jawaharlal Nehru Technological Institute",
+            "title": "Master of Computer Applications",
+            "location": "Kakinada, India",
+            "text": ""
         },
         {
-            "timeFrame": "2017 - Present",
-            "heading": "JNTU, India",
-            "title": "MCA2",
-            "text": "321Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
+            "timeFrame": "2005 - 2008",
+            "heading": "Andhra University",
+            "title": "Bachelor of Science",
+            "location": "Visakhapatnam, India",
+            "text": ""
         }
     ],
     "experience": [
         {
-            "timeFrame": "2015 - Present",
-            "heading": "testJNTU, India",
-            "title": "MCA3",
+            "timeFrame": "Dec 2019 - Present",
+            "heading": "TA Digital",
+            "title": "Associate Technical Lead",
+            "location": "Hyderabad, India",
+            "text": ""
+        },
+        {
+            "timeFrame": "Feb 2017 - Dec 2019",
+            "heading": "Deloitte Consulting",
+            "title": "Senior Consultant",
+            "location": "Hyderabad, India",
+            "text": "Develop requirements, user interface specifications, end-user goals, and designs for E-Commerce based websites and software applications. Collaborate with product managers, developers, web producers, and designers throughout project lifecycle, from concept through implementation. Liaise with business analysts, clients, and users to maximize short- and long-term product success."
+        },
+        {
+            "timeFrame": "Oct 2015 - Feb 2017",
+            "heading": "Innominds Software",
+            "title": "Senior Engineer - UI",
+            "location": "Hyderabad, India",
             "text": "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
         },
         {
-            "timeFrame": "2015 - Present",
-            "heading": "tst2 JNTU, India",
-            "title": "MCA4",
+            "timeFrame": "Sep 2011 - Oct 2015",
+            "heading": "TechAspect Solutions",
+            "title": "Senior Software Engineer",
+            "location": "Hyderabad, India",
             "text": "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
         }
     ],
     "skills": [
         {
-            "name": "HTML1",
+            "name": "HTML",
             "percentage": 90
         },
         {
-            "name": "HTML2",
+            "name": "CSS, SCSS",
             "percentage": 90
         },
         {
-            "name": "HTML3",
+            "name": "JavaScript",
+            "percentage": 85
+        },
+        {
+            "name": "TypeScript",
             "percentage": 70
         },
         {
-            "name": "HTML4",
+            "name": "jQuery",
             "percentage": 90
         },
         {
-            "name": "HTML5",
-            "percentage": 90
+            "name": "Node, Express",
+            "percentage": 50
         },
         {
-            "name": "HTML6",
-            "percentage": 90
+            "name": "Angular, NgRx",
+            "percentage": 80
+        },
+        {
+            "name": "Vue, Vuex",
+            "percentage": 70
+        },
+        {
+            "name": "React, Redux",
+            "percentage": 50
+        },
+        {
+            "name": "Ionic",
+            "percentage": 75
+        },
+        {
+            "name": "Bootstrap",
+            "percentage": 80
+        },
+        {
+            "name": "Gulp, Webpack",
+            "percentage": 70
+        },
+        {
+            "name": "GIT",
+            "percentage": 80
         }
     ],
     "projects": [
         {
             "id": 0,
-            "imageName": "train.jpg",
-            "title": "A multi-level marketing company specializing in skincare products",
+            "imageName": "skincare.jpg",
+            "title": "Ecommerce web application for a multi-level marketing company specializing in skincare products",
             "details": {
-                "role": "role",
+                "role": "UI Architect & Lead",
                 "stack": [
-                    "stack 1",
-                    "stack 2",
-                    "stack 3"
+                    "VueJs",
+                    "Handlebars",
+                    "SCSS",
+                    "Webpack",
+                    "jQuery",
+                    "Lodash",
+                    "Hybris"
                 ],
                 "workDone": [
-                    "1Setup the Ionic project from scratch and built complete.",
-                    "2Setup the Ionic project from scratch and built complete.",
-                    "3Setup the Ionic project from scratch and built complete."
+                    "Worked with clients, managers, and development team to develop efficient and consisted UI",
+                    "Worked on setting up the frontend architecture of the project using Vue JS, Handlebars, Webpack, Babel, Node-SASS",
+                    "Wrote reusable components and integrated with Hybris frontend.",
+                    "Lead the frontend team and conducted the code reviews.",
+                    "Analyzed and optimized performance by code chucking and lazy loading.",
+                    "Created email templates by using foundation framework."
                 ]
             }
         },
         {
             "id": 1,
             "imageName": "train.jpg",
-            "title": "A multi-level marketing company specializing in skincare products",
+            "title": "Hybrid mobile application for a passenger railroad service provider",
             "details": {
-                "role": "role1",
+                "role": "UI Lead",
                 "stack": [
-                    "stack 1",
-                    "stack 2",
-                    "stack 3"
+                    "Ionic Framework",
+                    "Angular",
+                    "TypeScript",
+                    "SCSS",
+                    "AEM",
+                    "AWS"
                 ],
                 "workDone": [
-                    "1Setup the Ionic project from scratch and built complete.",
-                    "2Setup the Ionic project from scratch and built complete.",
-                    "3Setup the Ionic project from scratch and built complete."
+                    "Setup the Ionic project from scratch and built complete.",
+                    "Completely owned the train status module which is the most complex functionality of the application.",
+                    "Worked on performance optimization.",
+                    "AEM integration for content pages by consuming REST services.",
+                    "Wrote unit test cases using Jasmine and Karma."
                 ]
             }
         },
         {
             "id": 2,
-            "imageName": "train.jpg",
-            "title": "A multi-level marketing company specializing in skincare products",
+            "imageName": "shoe2.jpg",
+            "title": "Ecommerce web application for an American sportswear and footwear retailer",
             "details": {
-                "role": "role2",
+                "role": "Senior UI Developer",
                 "stack": [
-                    "stack 1",
-                    "stack 2",
-                    "stack 3"
+                    "Handlebars",
+                    "Webpack",
+                    "Gulp",
+                    "Redux",
+                    "jQuery",
+                    "Bootstrap",
+                    "Hybris"
                 ],
                 "workDone": [
-                    "1Setup the Ionic project from scratch and built complete.",
-                    "2Setup the Ionic project from scratch and built complete.",
-                    "3Setup the Ionic project from scratch and built complete."
+                    "Worked on developing the UI components using Handlebars.",
+                    "Closely worked with Hybris developers to integrate the UI components with hybris frontend.",
+                    "Involved in peer code reviews and worked on performance tuning.",
+                    "Provided support in troubleshooting UI issues"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "imageName": "marketing2.jpg",
+            "title": "A marketing and sales automation tool",
+            "details": {
+                "role": "UI Lead",
+                "stack": [
+                    "Angular JS",
+                    "Bootstrap",
+                    "SCSS"
+                ],
+                "workDone": [
+                    "Created a custom responsive web application to replace a legacy line-of-business web application using Angular JS.",
+                    "Developed responsive interface using Bootstrap and used SASS for CSS.",
+                    "Used Angular.js for connecting the API's using Angular.js $http service."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "imageName": "insurance2.jpg",
+            "title": "Web application for an American health insurance company",
+            "details": {
+                "role": "Senior UI Developer",
+                "stack": [
+                    "JavaScript",
+                    "Bootstrap",
+                    "LESS",
+                    "jQuery",
+                    "Weld.js",
+                    "Sitecore"
+                ],
+                "workDone": [
+                    "Developed responsive interface using Bootstrap and used LESS for CSS.",
+                    "Worked closely with backend developers for frontend and backend integrations.",
+                    "Provided support in troubleshooting UI issues.",
+                    "Involved in peer code reviews."
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "imageName": "university.jpg",
+            "title": "Web application for an online university",
+            "details": {
+                "role": "UI Lead",
+                "stack": [
+                    "Angular JS",
+                    "Bootstrap",
+                    "LESS"
+                ],
+                "workDone": [
+                    "Created a custom responsive web application to replace a legacy line-of-business web application using Angular JS.",
+                    "Developed responsive interface using Bootstrap and used LESS for CSS.",
+                    "Used Angular.js for connecting the API's using Angular.js $http service."
                 ]
             }
         }
@@ -173,22 +295,22 @@
         {
             "type": "Location",
             "value": "Hyderabad, India",
-            "url": "test"
+            "url": "https://goo.gl/maps/k7Gio9wsvpybSNXg8"
         },
         {
-            "type": "Location1",
-            "value": "Hyderabad, India",
-            "url": "test"
+            "type": "Phone",
+            "value": "+91 9000827177",
+            "url": "tel:9000827177"
         },
         {
-            "type": "Location2",
-            "value": "Hyderabad, India",
-            "url": "test"
+            "type": "Email",
+            "value": "anildfe@gmail.com",
+            "url": "mailto:anildfe@gmail.com"
         },
         {
-            "type": "Location3",
-            "value": "Hyderabad, India",
-            "url": "test"
+            "type": "Website",
+            "value": "anildfe.info",
+            "url": "http://www.anildfe.info"
         }
     ]
 }

@@ -49,7 +49,7 @@ export default {
             &:after {
                 content: '';
                 width: 60px;
-                height: 2px;
+                height: 0.15rem;
                 background: $primary;
                 position: absolute;
                 bottom: -12px;

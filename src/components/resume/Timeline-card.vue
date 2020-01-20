@@ -2,7 +2,7 @@
     <div class="timeline-card d-flex">
         <div class="timeline-card_point"></div>
         <div class="timeline-card_content row m-0 pl-3">
-            <div class="col-md-5">
+            <div class="pl-3">
                 <div class="timeline-card_content_timeframe">
                     {{ cardData.timeFrame }}
                 </div>
@@ -10,13 +10,11 @@
                     {{ cardData.heading }}
                 </h3>
                 <h4 class="timeline-card_content_title">
+                    {{ cardData.location }}
+                </h4>
+                <h4 class="timeline-card_content_title">
                     {{ cardData.title }}
                 </h4>
-            </div>
-            <div class="col-md-7">
-                <p>
-                    {{ cardData.text }}
-                </p>
             </div>
         </div>
     </div>

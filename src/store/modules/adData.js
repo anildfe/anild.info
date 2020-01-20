@@ -31,7 +31,6 @@ const mutations = {
     },
     setBlogData: (state, blogData) => {
         state.blogData = blogData;
-        console.log(state.blogData.items);
     }
 };
 

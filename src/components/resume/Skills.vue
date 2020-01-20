@@ -2,7 +2,7 @@
     <section class="resume-section_sub-section skills-section mb-0" id="skills">
         <h2>Skills</h2>
         <div class="row">
-            <div class="col-md-6" v-for="(skill, index) in skills" :key="skill.name" :class="{'mt-5': index > 1}">
+            <div class="col-md-6 col-6" v-for="(skill, index) in skills" :key="skill.name" :class="{'mt-5': index > 1}">
                 <app-skill-progress :skillData="skill"></app-skill-progress>
             </div>
         </div>
