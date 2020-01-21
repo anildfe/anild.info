@@ -1,7 +1,7 @@
 <template>
     <section class="resume-section_sub-section education-section" id="edu">
         <h2>Education</h2>
-        <div class="education-section_cards">
+        <div class="education-section_cards ml-4">
             <app-timeline-card v-for="educationItem in education" :key="educationItem.title" :cardData="educationItem"></app-timeline-card>
         </div>
     </section>
@@ -30,7 +30,7 @@ export default {
             height: 2px;
             background: $lines;
             position: absolute;
-            left: 8.5px;
+            left: 32px;
         }
     }
 

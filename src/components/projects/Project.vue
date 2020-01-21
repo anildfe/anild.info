@@ -46,6 +46,10 @@ export default {
             text-align: center;
             color: $links;
 
+            @include media-breakpoint-only(md) {
+                font-size: 16px;
+            }
+
             &:after {
                 content: '';
                 width: 60px;

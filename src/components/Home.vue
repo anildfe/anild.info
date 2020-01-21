@@ -24,11 +24,27 @@
                         <span class="sub-heading">Hey! I am</span>
                         <h1
                         v-if="name"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-once="true"
                         >{{name.firstName}} {{name.lastName}}</h1>
-                        <app-social></app-social>
+                        <app-social
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        data-aos-duration="800"
+                        data-aos-once="true">
+                        </app-social>
                     </div>
                 </div>
             </div>
+            <scrollactive 
+            tag="div" 
+            :offset="72" 
+            :highlightFirstItem="true"
+            :modifyUrl="false"
+            class="home-section_arrow bounce d-block d-sm-none">
+                <a href="#about" class="scrollactive-item"><span><i class="fas fa-arrow-down"></i></span></a>
+            </scrollactive >
         </div>
     </section>
 </template>
@@ -91,6 +107,36 @@ export default {
 				color: $primary;
 				text-decoration: underline;
 			}
+        }
+    }
+
+    &_arrow {
+        position: absolute;
+        bottom: 16px;
+        left: calc(50% - 11px);
+        a {
+            color: $primary;
+            i {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
         }
     }
 }

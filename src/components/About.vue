@@ -1,27 +1,26 @@
 <template>
-    <section class=" surface-background py-5" id="about">
+    <section class=" surface-background py-md-5 py-4" id="about">
         <div class="container" v-if="aboutMe">
             <div class="row d-flex no-gutters">
-                <div class="col-md-12 col-lg-12 py-5">
+                <div class="col-md-12 col-lg-12">
                     <h2 class="mb-4 heading">About Me</h2>
-                    <!-- <p class="mb-0">{{aboutMe.text}}</p> -->
                     <p class="mb-0" v-html="aboutMe.text"></p>
                 </div>
             </div>
-            <div class="about-section_expertise">
+            <div class="about-section_expertise mt-4">
                 <ol class="row d-flex flex-wrap m-0 p-0">
                     <li 
                     v-for="expertiseItem in aboutMe.expertise" 
                     :key="expertiseItem.title"
-                    class="col-md-4 d-flex p-0 mb-2">
+                    class="col-md-4 d-flex pl-0 pr-3 mb-2">
                         <div class="d-flex flex-column">
                             <h4>{{expertiseItem.title}}</h4>
-                            <p>{{expertiseItem.content}}</p>
+                            <p class="mt-2">{{expertiseItem.content}}</p>
                         </div>
                     </li>
                 </ol>
             </div>
-            <div class="about-section_download d-flex mt-4">
+            <div class="about-section_download d-flex">
                 <a :href="aboutMe.cvUrl" class="btn btn-primary">Download CV</a>
             </div>
         </div>
@@ -61,6 +60,10 @@ export default {
                     font-weight: 700;
                     text-transform: uppercase;
                     margin: 5px 0 0;
+                }
+
+                p {
+                    line-height: 1.5;
                 }
             }
         }

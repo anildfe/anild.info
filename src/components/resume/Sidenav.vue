@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-    margin-top: 2px;
+    margin-top: 25px;
     position: sticky;
     top: 200px;
     ul {

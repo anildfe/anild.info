@@ -43,7 +43,7 @@ export default {
         position: absolute;
         background: $primary;
         border-radius: 50%;
-        left: 11.5px;
+        left: 35.5px;
         box-shadow: 0 0 0 6px $primary-bg;
     }
 
